@@ -3,8 +3,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#define LEBAR_HEADER 60
-
 void tampilkan_header_program_static(void) {
   printf("\n");
 
@@ -17,7 +15,7 @@ void tampilkan_header_program_static(void) {
 
 void tampilkan_header_program_dynamic(const char *judul) {
   int panjang_judul = strlen(judul);
-  int jarak_kiri = (LEBAR_HEADER - panjang_judul) / 2;
+  int jarak_kiri = (60 - panjang_judul) / 2;
 
   printf("\n");
 
@@ -31,5 +29,13 @@ void tampilkan_header_program_dynamic(const char *judul) {
 
   printf("============================================================\n");
 
+  printf("\n");
+}
+
+void tampilkan_header_program_lite(const char *judul) {
+  printf("\n");
+  printf("============================================================\n");
+  printf("                       %s\n", judul);
+  printf("============================================================\n");
   printf("\n");
 }
