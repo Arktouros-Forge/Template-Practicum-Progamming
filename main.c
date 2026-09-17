@@ -5,9 +5,9 @@
 #include <stdio.h>
 
 int main(void) {
-  tampilkan_kartu_kelompok();
+  tampilkan_kartu_kelompok_static();
 
-  tampilkan_header_program("Konversi Suhu");
+  tampilkan_header_program_dynamic("Konversi Suhu");
 
   float suhu_celsius;
 
